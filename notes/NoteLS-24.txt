@@ -1,0 +1,5 @@
+Attribute binding
+-------------------
+<img [src] = "someSrc"> --> Property binding
+<span> {{User.name}} --> string interpolation
+

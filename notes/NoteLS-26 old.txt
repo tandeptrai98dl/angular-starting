@@ -1,0 +1,15 @@
+Databinding = communication
+
+TypeScript Code ->output data  Html
+String Interpolation {{ data }}
+Property Binding ([property] = "data" )
+
+HTML -> React to User events
+Event Binding( event = "expression" )
+----------------------------------------------
+
+Two-way-binding([ngModel] = "data")
+
+-----------------------------------------
+LS27,  28 
+String Interpolation

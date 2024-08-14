@@ -1,10 +1,5 @@
 import { Component, computed, EventEmitter, input, Input, output, Output} from '@angular/core';
-
-interface User{
-  id: string;
-  avatar: string;
-  name: string;
-}
+import { User } from './user.model';
 
 @Component({
   selector: 'app-user',
@@ -24,6 +19,8 @@ export class UserComponent {
   // };
 
   user = input.required<User>();
+  //@Input({required: true}) selected!: boolean;
+  selected = input.required<boolean>();
   select = output<string>();
 
   imagePath = computed(() => {

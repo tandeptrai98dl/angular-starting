@@ -1,0 +1,9 @@
+Track in @for 
+- Reuse already rendered list items (doesn't create the entire list)
+- Unique identification criteria 
+
+Flow Emit:
+Task.HTML -> button click -> onCompleteTask()
+Task.TS -> .emit() -> 
+
+Tasks.html -> (complete)="doSomething($event)"

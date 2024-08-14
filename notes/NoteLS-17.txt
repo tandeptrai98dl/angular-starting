@@ -1,0 +1,3 @@
+--- generate component
+
+ng gc user

@@ -1,0 +1,8 @@
+Form module is required for two-way-binding
+enable the 'ngModel' directive
+
+import FormModule || app.module.ts
+-----------------------------------
+
+Directives - Intructions in the DOM
+<p *ngIf="serverCreated">Server was created, server name is {{serverName}}</p>
