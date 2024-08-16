@@ -1,3 +1,9 @@
 Two way binding - combination of property and event binding
 -----------------
-Directives <input ngModel>
+Directives <input [(ngModel)] = "enteredTitle" ....
+
+import { FormsModule } from '@angular/forms';
+
+-----------------
+Dependency Injection
+Register injectable --- @Injectable({ providedIn: 'root'})
