@@ -43,19 +43,19 @@ export class TasksService {
     }
 
     addTask(taskData: NewTaskData, userId: string){
-        this.tasks.unshift({
-            id: new Date().getTime().toString(),
-            userId: userId,
-            title: taskData.title,
-            summary: taskData.summary,
-            dueDate: taskData.date,
-        });
-        this.saveTasks();
+      this.tasks.unshift({
+          id: new Date().getTime().toString(),
+          userId: userId,
+          title: taskData.title,
+          summary: taskData.summary,
+          dueDate: taskData.date,
+      });
+      this.saveTasks();
     }
 
     removeTask(id: string){
-        this.tasks = this.tasks.filter(task => task.id !== id);
-        this.saveTasks();
+      this.tasks = this.tasks.filter(task => task.id !== id);
+      this.saveTasks();
     }
 
     private saveTasks(){
