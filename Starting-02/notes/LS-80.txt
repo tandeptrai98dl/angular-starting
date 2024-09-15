@@ -1,0 +1,5 @@
+LS-80:
+Cross-component communication with outputs
+
+
+@for => track x - 'x' which uniquely identifies => Angular performance reasons
