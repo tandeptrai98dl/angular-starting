@@ -1,0 +1,19 @@
+LS-86:
+-service -> @Injectable({provided})
+-add new serive -> return data
+-user-input.component -> remove output
+-> use Service caculate
+-result.ts -> inject Service -> getter()
+
+--------------------------
+Signal - đối tượng lưu trữ 1 giá trị, auto kích hoạt update UI khi value này thay đổi
+Computed Signal - tạo ra 1 signal mới dựa trên 1signal khác. Giá trị signal thay đổi khi signal phụ thuộc thay đổi
+Effect - hàm tự động chạy khi 1 hoặc n signal thay đổi
+
+counter = signal(0);
+doubleCounter = computed(() => this.counter() * 2);
+
+constructor(){
+effect(() => {
+console.log(this.counter())
+})}
