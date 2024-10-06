@@ -1,0 +1,25 @@
+LS- 88:
+Modules - @Ngmodule
+
+LS-94:
+When split a component
+-should do one thing
+
+LS-98: Reuseable components
+
+LS-101: <ng-content>
+
+LS-104: Extending Built-in elements
+component selectors - <button appButton></button>
+
+LS-105: Content Projection
+<ng-content />
+
+LS-106: Advanced content projection
+<span ngProjectAs="icon"></span> --- use
+</span>
+<span class="icon"> --- define
+    <ng-content select="icon"/>
+</span>
+
+LS-107: Content projection fallbacks
