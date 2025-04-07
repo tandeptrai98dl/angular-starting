@@ -1,0 +1,10 @@
+ngOnInit: runs once after Angular has initialized all the component's inputs
+
+Init: contructor -> ngOnChanges -> ngOnInit -> ngDoCheck 
+
+template variable 
+-> DOM 
+-> component -> component instance
+
+ViewChild decorator
+Signal 
