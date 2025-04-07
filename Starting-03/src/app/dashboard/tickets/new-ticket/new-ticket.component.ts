@@ -1,4 +1,4 @@
-import { Component, ElementRef, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
 import { ButtonComponent } from '../../../shared/button/button.component';
 import { ControlComponent } from "../../../shared/control/control.component";
 import { FormsModule } from '@angular/forms';
@@ -10,11 +10,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './new-ticket.component.html',
   styleUrl: './new-ticket.component.css'
 })
-export class NewTicketComponent {
+export class NewTicketComponent implements AfterViewInit {
   // @ViewChild('form') private form?: ElementRef<HTMLFormElement>
   private form = viewChild.required<ElementRef<HTMLFormElement>>('form');
 
   onSubmit(title: string, textInput: string){
     this.form()?.nativeElement.reset();
+  }
+
+  ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
   }
 }
