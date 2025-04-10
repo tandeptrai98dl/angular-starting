@@ -26,6 +26,6 @@ export class ControlComponent implements AfterContentInit {
   }
 
   ngAfterContentInit(): void {
-    throw new Error('Method not implemented.');
+    console.log('ngAfterContentInit');
   }
 }
