@@ -1,0 +1,6 @@
+LS 155: Custom directives
+LS 158: Directives & Dependency injection
+LS 159: Structural Directive
+ViewContainerRef -> render new content in certain place
+LS 161: Asterisk (*) -> ngTemplate being added
+LS 162: Host directives & Composition
